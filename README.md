@@ -1,5 +1,3 @@
-# Voltage-Divider-Calculator-py
-
 ## 🔋 3-Resistor Voltage Divider Calculator
 
 This calculator determines resistor values, total current, and power dissipation for a 3-resistor voltage divider circuit based on the input voltage and two output voltages (taps).
@@ -86,7 +84,28 @@ Power dissipated:
   P_R2 = 0.0027 W
   P_R3 = 0.0089 W
 ```
+### 💿📊 Simulation Output:
+![Alt text](circuit-20250515-1016.png)
+
+[www.falstad.com](https://www.falstad.com/circuit/)
 
 ```
+$ 1 0.000005 10.20027730826997 50 5 43 5e-11
+v 112 352 112 80 0 0 40 12 0 0 0.5
+g 112 352 112 400 0 0
+r 256 80 256 160 0 2500
+r 256 160 256 256 0 1500
+r 256 256 256 352 0 5000
+g 256 352 256 400 0 0
+w 256 80 112 80 1
+w 256 160 336 160 2
+w 256 256 336 256 2
+w 256 80 336 80 2
+x 199 124 229 127 4 24 R1
+x 199 214 229 217 4 24 R2
+x 201 312 231 315 4 24 R3
+x 349 266 410 269 4 24 Vout2
+x 346 170 407 173 4 24 Vout1
+x 346 85 380 88 4 24 Vin
 
-
+```
